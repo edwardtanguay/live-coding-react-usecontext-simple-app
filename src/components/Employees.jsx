@@ -1,5 +1,9 @@
+import { useContext } from 'react';
+import { AppContext } from '../AppContext';
+
 export const Employees = () => {
-	const companyName = 'eee';
+	const { companyName } = useContext(AppContext); 
+
 	return (
 		<>
 			<h2>Employees</h2>
